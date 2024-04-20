@@ -9,7 +9,9 @@
 	.s-full-width{
 		width: 100% !important;
 	}
-	
+	.Header{
+		display: inline-block;
+	}
 	#nav{
 		display: block;
 	}

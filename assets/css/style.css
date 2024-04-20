@@ -60,6 +60,10 @@ html{
 	right:0;
 	z-index:1;
 }
+.Header{
+	display: flex;
+	justify-content: center;
+}
 #nav{
 	display: inline-block;
 }
@@ -101,7 +105,6 @@ html{
 	line-height: 38px;
 }
 #nav li a{
-		
 	text-decoration: none;
 	line-height: 46px;
 	padding: 0 24px;
@@ -112,30 +115,17 @@ html{
 	background-color: #ccc;
 	display: block;
 }
-	
 #nav .nav-arrow-down{
 	font-size: 12px;
 }
 #header .mobile-menu-btn{
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: 9px;
 	display: none;
 }
 #header .mobile-menu-btn,
-#header .search-button{
-	float: right;
-	color: white;
-	line-height: 46px;
-	padding: 0 21px;
-}
-#header .search-button:hover{
-	background-color: red;
-	cursor: pointer;
-}
-.mobile-menu-btn:hover{
-	background-color: #ccc;
-}
+
 #header .mobile-menu-btn:hover .menu-icon{
 	color: #000;
 }
@@ -396,10 +386,13 @@ margin-bottom: 48px;
 cursor: pointer;
 }
 .place-body{
-padding: 16px;
+padding: 18px;
 background-color: white;
 font-size: 12px;
 box-sizing: inherit;
+}
+.place-body2{
+padding: 20px;
 }
 .place-body-fix{
 	padding: 16px 16px 17px 16px;
@@ -606,34 +599,12 @@ justify-items: center;
 	background-color: #757575;
 	border: none;
 }
+/*End: contact */
+
+/*Begin: map*/
 .map-section img{
+	margin-bottom: -6px;
 	width: 100%;
 	text-align: center;
 }
-/*End: contact */
-
-/*Begin: footer */
-#Footer{
-	padding: 64px 16px;
-	text-align: center;
-}
-#Footer .social-list{
-	font-size: 24px;
-}
-#Footer .social-list a{
-	color: rgba(0, 0, 0, 0.6);
-	text-decoration: none;
-}
-#Footer .copy-write a:hover,
-#Footer .social-list a:hover{
-	color: rgba(0, 0, 0, 0.2);
-}
-#Footer .copy-write{
-	margin-top: 15px;
-	color: rgba(0, 0, 0, 0.6);
-}
-#Footer .copy-write a{
-	margin-top: 15px;
-	color: rgba(0, 0, 0, 0.6);
-}
-/*End: footer */
+/*End: map */

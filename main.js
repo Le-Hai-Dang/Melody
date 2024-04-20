@@ -1,4 +1,4 @@
-//Apps Script phần contact
+//Apps Script contact section
 const zoneInput = document.getElementById("zoneInput");
 const quantity = document.getElementById("quantity");
 const email = document.getElementById("email");
@@ -32,20 +32,16 @@ prev.onclick = function(){
 let refreshInterval = setInterval(()=> {next.click()}, 3000);
 function reloadSlider(){
     slider.style.left = -items[active].offsetLeft + 'px';
-    // 
     let last_active_dot = document.querySelector('.slider .dots li.active');
     last_active_dot.classList.remove('active');
     dots[active].classList.add('active');
-
-    clearInterval(refreshInterval);
+	clearInterval(refreshInterval);
     refreshInterval = setInterval(()=> {next.click()}, 3000);
-
-    
 }
 dots.forEach((li, key) => {
     li.addEventListener('click', ()=>{
-         active = key;
-         reloadSlider();
+        active = key;
+        reloadSlider();
     })
 })
 window.onresize = function(event) {
@@ -68,7 +64,7 @@ var mobileMenu = document.getElementById('mobile-menu');
 var header = document.getElementById('header');
 var headerHeight= header.clientHeight;
 mobileMenu.onclick=function(){
-	//Đóng mở mobile menu
+	//Open and close mobile menu
 	var isClosed = header.clientHeight === headerHeight;
 	if(isClosed){
 		header.style.height='auto';
@@ -76,7 +72,7 @@ mobileMenu.onclick=function(){
 		header.style.height=nu;	
 	}
 }
-//tự động đóng khi chọn menu
+//closes automatically when menu is selected
 var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
 for (var i=0;i<menuItems.length;i++){
 	var menuItem = menuItems[i];
@@ -90,14 +86,14 @@ for (var i=0;i<menuItems.length;i++){
 		}
 	};
 }
-//Phần mua vé
+//Ticket purchasing section
 const buyBtns = document.querySelectorAll('.js-buy-ticket')
 const modal=document.querySelector('.js-modal')
 const modalContainer=document.querySelector('.js-modal-container')
 const modalClose=document.querySelector('.js-modal-close')
 const modalSuccess=document.querySelector('.js-modal-success')
 function showBuyTickets(){
-	modal.classList.add('open')
+modal.classList.add('open')
 }
 for(const buyBtn of buyBtns){
 	buyBtn.addEventListener('click',showBuyTickets)
@@ -121,8 +117,6 @@ function showSuccessToast() {
 		duration: 5000
 	});
 }
-
-// Thêm mã JavaScript để gọi hàm showSuccessToast() khi nút Buy Tickets được nhấn
 document.getElementById("buy-tickets").addEventListener("click", showSuccessToast);
 function toast({ title = "", message = "", type = "info", duration = 3000 }) {
 	const main = document.getElementById("toast");

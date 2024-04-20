@@ -20,10 +20,10 @@
     <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<>
     <div id="main">
         <!--Begin: header-->
-        <div id="header">
+        <div id="header" class="Header">
             <!--Begin nav-->
             <ul id="nav">
                 <li><a href="#">Home</a></li>
@@ -43,14 +43,11 @@
                 </li>
             </ul>
             <!--End nav-->
-            <!--Begin: Search button-->
-            <div class="search-button">
-                <i class="search-icon ti-search"></i>    
-            </div>
+            <!--Begin: mobile-menu-->
             <div id="mobile-menu" class="mobile-menu-btn">
                 <i class="menu-icon ti-menu"></i>
             </div>
-            <!--End: Search button-->
+            <!--End: mobile-menu-->
         </div>
         <!--End: header-->
 
@@ -58,7 +55,7 @@
         <div class="slider">
 			<div class="list">
 				<div class="item">
-					<img src="./assets/img/Slider/Slider1.jpg" alt="">
+					<img src="./assets/img/Slider/Slider1.png" alt="">
 				</div>
 				<div class="item">
 					<img src="./assets/img/Slider/Slider2.jpg" alt="">
@@ -70,7 +67,7 @@
 					<img src="./assets/img/Slider/Slider4.jpg" alt="">
 				</div>
 				<div class="item">
-					<img src="./assets/img/Slider/Slider5.png" alt="">
+					<img src="./assets/img/Slider/Slider5.jpg" alt="">
 				</div>
 			</div>
 			<div class="buttons">
@@ -93,7 +90,7 @@
             <div id="band" class="content-section">
                 <h2 class="section-heading">MELODY</h2>
                 <p class="section-subheading">We love music</p>
-                <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="about-text">Introducing Melody, a vibrant trio that’s shaking up the music scene. Comprising David, the charismatic guitarist with a knack for soulful melodies, Madison, the powerhouse vocalist whose range defies limits, and Amelia, the rhythmic backbone on drums, they create a sound that’s both fresh and familiar. Their chemistry is palpable, each performance a testament to their shared passion for music that resonates. With Melody, every note tells a story, and every song is an invitation to feel, dance, and dream.</p>
             </div>
             <div class="row member-list">
                 <div class="member-item col col-third member-item">
@@ -111,7 +108,6 @@
             </div>
             <!--End: about section-->
 
-            <!--End: toast message-->
             <!--Begin: tour section-->
             <div id="tour" class="tour-section">
                 <div class="content-section">
@@ -131,7 +127,7 @@
                                 <div  class="place-body place-body-fix">
                                     <h3 class="place-heading">Ho Chi Minh city</h3>
                                     <p class="place-time">Fri 27 Nov 2024</p>
-                                    <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                    <p class="place-desc">We will come here</p>
                                     <button id="buy-ticket-1" class="place-buy-button s-full-width js-buy-ticket">Buy Tickets</button>
                                 </div>
                             </div>
@@ -140,16 +136,16 @@
                                 <div class="place-body">
                                     <h3 class="place-heading">Da Nang city</h3>
                                     <p class="place-time">Sat 28 Nov 2024</p>
-                                    <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                    <p class="place-desc">We will come here</p>
                                     <button id="buy-ticket-2" class="place-buy-button s-full-width js-buy-ticket">Buy Tickets</button>
                                 </div>
                             </div>
                             <div class="col col-third s-col-full mt-16 place-3">
                                 <img src="./assets/img/Places/HaNoicapital.jpg" alt="Ha Noi capital" class="place-img">
-                                <div class="place-body">
+                                <div class="place-body place-body2 ">
                                     <h3 class="place-heading">Ha Noi capital</h3>
                                     <p class="place-time">Sun 29 Nov 2024</p>
-                                    <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                    <p class="place-desc">We will come here</p>
                                     <button id="buy-ticket-3" class="place-buy-button s-full-width js-buy-ticket">Buy Tickets</button>
                                 </div>
                             </div>
@@ -225,39 +221,18 @@
                     </footer>
                 </div>
             </div>
-
             <!--End: modal-->
-
         </div>
-
-
         <!--End: content-->
 
-        <!--Begin: contact section-->
+        <!--Begin: map-->
         <div class="map-section">
-            <img src="./assets/img/Map/map.jpg" alt="Map">    
+            <img src="./assets/img/Map/map.png" alt="Map">    
         </div>      
-        <!--End: contact section-->
-
-        <!--Begin: footer-->
-        <div id="Footer">
-            <div class="social-list">
-                <a href=""><i class="ti-facebook"></i></a>
-                <a href=""><i class="ti-instagram"></i></a>
-                <a href=""><i class="ti-youtube"></i></a>
-                <a href=""><i class="ti-pinterest"></i></a>
-                <a href=""><i class="ti-twitter"></i></a>
-                <a href=""><i class="ti-linkedin"></i></a>
-            </div>
-
-        </div>
-        <!--End: footer-->
+        <!--End: map-->
     </div>
-	<!--Begin: toast message-->
 	<div id="toast"></div>
-
-	
-	<!--Begin: modal-->
     <script src="./main.js"></script>
+    </div>   
 </body>
 </html>
